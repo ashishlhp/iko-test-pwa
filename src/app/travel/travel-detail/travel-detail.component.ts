@@ -35,4 +35,10 @@ export class TravelDetailComponent implements OnInit {
       this.reviews = this.place.reviews;
     }
   }
+  /**
+   * Handle book button click
+   */
+  onBook(){
+    alert("Thank you for Booking !")
+  }
 }

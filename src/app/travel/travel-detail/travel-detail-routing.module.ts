@@ -4,7 +4,14 @@ import { extract } from '@app/core';
 import { TravelDetailComponent } from './travel-detail.component'
 
 const routes: Routes = [
-	{ path: '',component: TravelDetailComponent, pathMatch:'full', data: { title: extract('Travel Detail') } },
+	{ 
+		path: '',
+		component: TravelDetailComponent,
+		pathMatch:'full', 
+		data: { 
+			title: extract('Travel Detail') 
+		} 
+	},
 ];
 
 @NgModule({
