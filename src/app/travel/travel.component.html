@@ -1,0 +1,21 @@
+<app-header [title]="'Spot'"></app-header>
+<div class="content_body">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div *ngFor="let item of list">
+          <a  routerLink="/travel/{{ item.id }}/detail">
+            <div 
+             
+              angulartics2On="click"
+              angularticsAction="item.title"
+              [angularticsCategory]="destination"
+              >
+              <place-item [place]="item" [isFromHome]="true"></place-item>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

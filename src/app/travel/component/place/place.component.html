@@ -1,0 +1,18 @@
+<div class="home_blog_section {{ !isFromHome ? 'add-padding' : '' }}">
+  <img [src]="place?.image" />
+  <div class="home_blog_section_content">
+    <h1>{{ place?.title }}</h1>
+    <span>{{ place?.subTitle }}</span>
+    <ul>
+      <li>
+        <i class="fa fa-random" aria-hidden="true"></i><span>{{ place?.wind }} knots</span>
+      </li>
+      <li>
+        <i class="fa fa-home" aria-hidden="true"></i><span>{{ place?.homes }} Centers</span>
+      </li>
+      <li>
+        <i class="fa fa-users" aria-hidden="true"></i><span>{{ place?.people }} Centers</span>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,141 @@
+.main_details {
+  margin-bottom: 64px;
+}
+.details_banner {
+  position: relative;
+  margin: 0 -15px 0;
+  img {
+    width: 100%;
+    min-height: 170px;
+    object-fit: cover;
+  }
+  ul {
+    list-style-type: none;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    text-align: right;
+    color: var(--white-color);
+    font-weight: 200;
+    li {
+      margin-bottom: 5px;
+      font-size: 18px;
+      i {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.details_content {
+  padding: 15px 0 0;
+  h1 {
+    font-weight: 200;
+    font-size: 36px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 1px;
+    @media (max-width: 767px) {
+      font-size: 26px;
+    }
+  }
+  span {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  ul {
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      color: var(--Dark-grayish-red);
+      display: flex;
+      font-size: 14px;
+      i {
+        margin-right: 10px;
+        margin-top: 5px;
+        color: var(--black-color);
+      }
+      .details_listing {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+    &.listing {
+      padding: 0;
+      list-style-type: none;
+      margin: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      li {
+        padding: 5px 10px;
+        background: var(--Dark-grayish-red);
+        display: inline-block;
+        width: 33.33%;
+        text-align: center;
+        margin-right: 10px;
+        border-radius: 10px;
+        font-size: 14px;
+        color: var(--white-color);
+        i {
+          margin-right: 5px;
+          margin-top: 0;
+          color: var(--white-color);
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+.detail-card-header{
+  padding: 15px 0;
+  outline: none;
+  h2 {
+    font-weight: 200;
+    font-size: 26px;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+}
+
+.cabarete_one_slider {
+  .inner_cabarete_one_slider {
+    img {
+      height: 38.309vw;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+}
+
+.related_slider {
+  .home_blog_section {
+    margin: 0;
+  }
+}
+
+.bottom_btn {
+  background: var(--primary-color);
+  margin: 0 -15px;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  button {
+    background: var(--pure-orange);
+    box-shadow: none;
+    border: none;
+    color: var(--white-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 200;
+    outline: none;
+  }
+}

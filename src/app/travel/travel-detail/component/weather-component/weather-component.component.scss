@@ -1,0 +1,87 @@
+.forecast {
+  padding: 15px 0;
+  h2 {
+    font-weight: 200;
+    font-size: 26px;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  .main_forecast {
+    background: var(--Very-dark-blue);
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+    color: var(--white-color);
+    padding: 15px;
+    border-radius: 5px;
+    .header_forecast {
+      display: flex;
+      .title {
+        display: flex;
+        width: 65%;
+        i {
+          margin-right: 5px;
+          font-size: 14px;
+          margin-top: 2px;
+          color: var(--Moderate-blue);
+        }
+        h3 {
+          font-size: 15px;
+          font-weight: 200;
+          margin: 0;
+        }
+      }
+      .temperature {
+        width: 35%;
+        ul {
+          padding: 0;
+          list-style-type: none;
+          margin: 0;
+          display: flex;
+          font-size: 14px;
+          text-align: center;
+          justify-content: flex-end;
+          li {
+            margin: 0 5px;
+            i {
+              &.fa {
+                &.fa-sun-o {
+                  font-size: 24px;
+                  color: var(--Soft-orange);
+                  width: 26px;
+                  height: 26px;
+                }
+                &.fa-arrow-left {
+                  font-size: 14px;
+                  transform: rotate(-25deg);
+                  border: 2px solid var(--Strong-lime-green);
+                  border-radius: 50%;
+                  padding: 5px;
+                  width: 26px;
+                  height: 26px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              }
+            }
+            span {
+              display: block;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+    .progress_border {
+      display: flex;
+      margin-top: 10px;
+      img {
+        width: 100%;
+      }
+      i {
+        display: inline-block;
+        margin-right: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
