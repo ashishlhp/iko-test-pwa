@@ -12,7 +12,6 @@
   &.sticky-header {
     position: fixed;
     z-index: 999;
-    width: 100%;
     top: 0;
     nav {
       &.bg-dark {
@@ -23,24 +22,17 @@
   nav {
     &.bg-dark {
       background-color: var(--primary-color) !important;
-      margin-bottom: 0;
-      padding: 15px;
       transition: ease 0.3s;
     }
   }
   .logo {
     width: 20%;
-    display: inline-block;
-    vertical-align: middle;
     img {
-      width: 100%;
       max-width: 80px;
     }
   }
   .back_btn {
     width: 20%;
-    display: inline-block;
-    vertical-align: middle;
     i {
       font-size: 40px;
       color: rgba(255, 255, 255, 0.8);
@@ -49,31 +41,16 @@
   }
   .title {
     width: 60%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    display: none;
     @media (max-width: 991px) {
       display: block;
     }
-    h1 {
-      font-size: 20px;
-      line-height: 1;
+    h5 {
       color: var(--white-color);
-      font-weight: 200;
-      text-transform: uppercase;
       letter-spacing: 2.5px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
     }
   }
   .reponsive_menu {
     width: 20%;
-    display: inline-block;
-    vertical-align: middle;
-    text-align: right;
   }
   .navbar-nav {
     margin: 0 0 0 auto;

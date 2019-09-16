@@ -1,17 +1,17 @@
 <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="TwoslidesCabareteConfig">
-  <div ngxSlickItem *ngFor="let review of reviews" class="inner_cabarete_two_slider">
+  <div ngxSlickItem *ngFor="let review of reviews" class="inner_cabarete_two_slider mr-2 ml-2 mb-1">
     <img src="{{ review.image }}" alt="" width="100%" />
-    <div class="slider_content">
-      <h1>{{ review.title }}</h1>
-      <p>
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <div class="slider_content p-3">
+      <h6 class="font-weight-light h6 text-ellipsis overflow-hidden">{{ review.title }}</h6>
+      <p class="d-flex align-items-start m-0 overflow-hidden">
+        <i class="fa fa-map-marker mt-1 mr-1" aria-hidden="true"></i>
         {{ review.location }}
       </p>
-      <div class="star_rating">
+      <div class="star_rating d-flex align-items-center text-left mt-3">
         <div>
-        	<ngb-rating [rate]="review.rating" [max]='5' [readonly]="true"></ngb-rating>
+          <ngb-rating [rate]="review.rating" [max]="5" [readonly]="true"></ngb-rating>
         </div>
-        <span>({{ review.reviewed }})</span>
+        <span class="ml-1">({{ review.reviewed }})</span>
       </div>
     </div>
   </div>

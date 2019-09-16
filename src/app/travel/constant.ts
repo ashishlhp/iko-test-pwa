@@ -44,6 +44,20 @@ export const TravelList: Array<Place> = [
     share: 1,
     reviews: [
       {
+        image: 'https://www.usnews.com/dims4/USNEWS/2cda733/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff1%2F3e%2Ffa0dbf6a48d2be396522587c06da%2F9-23.%20Bali%2C%20Indonesia-Getty.jpg',
+        title: 'Bali, Indonesia',
+        location: 'Indonesia',
+        rating: 3,
+        reviewed: 3
+      },
+      {
+        image: 'https://www.usnews.com/dims4/USNEWS/e7ef0a4/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff3%2Fb5%2F5bab42a64ccab6167e281d16ffbd%2F10-22.%20Costa%20Rica%20-%20Getty.jpg',
+        title: 'Costa Rica',
+        location: 'Manuel Antonio National Park',
+        rating: 3,
+        reviewed: 144
+      },
+      {
         image: 'https://www.usnews.com/dims4/USNEWS/d1fe84e/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F71%2Fd5%2F6bddc81a4df2abb0fce91784b8c6%2F7.%2025-Great%20Barrier%20Reef-Getty.jpg',
         title: 'Great Barrier Reef',
         location: 'Barrier Reef',
@@ -90,6 +104,20 @@ export const TravelList: Array<Place> = [
     like: 200,
     share: 131,
     reviews: [
+      {
+        image: 'https://www.usnews.com/dims4/USNEWS/2cda733/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff1%2F3e%2Ffa0dbf6a48d2be396522587c06da%2F9-23.%20Bali%2C%20Indonesia-Getty.jpg',
+        title: 'Bali, Indonesia',
+        location: 'Indonesia',
+        rating: 3,
+        reviewed: 3
+      },
+      {
+        image: 'https://www.usnews.com/dims4/USNEWS/e7ef0a4/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff3%2Fb5%2F5bab42a64ccab6167e281d16ffbd%2F10-22.%20Costa%20Rica%20-%20Getty.jpg',
+        title: 'Costa Rica',
+        location: 'Manuel Antonio National Park',
+        rating: 3,
+        reviewed: 144
+      },
       {
         image: 'https://www.usnews.com/dims4/USNEWS/d1fe84e/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F71%2Fd5%2F6bddc81a4df2abb0fce91784b8c6%2F7.%2025-Great%20Barrier%20Reef-Getty.jpg',
         title: 'Great Barrier Reef',
@@ -138,6 +166,20 @@ export const TravelList: Array<Place> = [
     share: 5,
     reviews: [
       {
+        image: 'https://www.usnews.com/dims4/USNEWS/2cda733/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff1%2F3e%2Ffa0dbf6a48d2be396522587c06da%2F9-23.%20Bali%2C%20Indonesia-Getty.jpg',
+        title: 'Bali, Indonesia',
+        location: 'Indonesia',
+        rating: 3,
+        reviewed: 3
+      },
+      {
+        image: 'https://www.usnews.com/dims4/USNEWS/e7ef0a4/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff3%2Fb5%2F5bab42a64ccab6167e281d16ffbd%2F10-22.%20Costa%20Rica%20-%20Getty.jpg',
+        title: 'Costa Rica',
+        location: 'Manuel Antonio National Park',
+        rating: 3,
+        reviewed: 144
+      },
+      {
         image: 'https://www.usnews.com/dims4/USNEWS/d1fe84e/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F71%2Fd5%2F6bddc81a4df2abb0fce91784b8c6%2F7.%2025-Great%20Barrier%20Reef-Getty.jpg',
         title: 'Great Barrier Reef',
         location: 'Barrier Reef',
@@ -185,6 +227,20 @@ export const TravelList: Array<Place> = [
     share: 111,
     reviews: [
       {
+        image: 'https://www.usnews.com/dims4/USNEWS/2cda733/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff1%2F3e%2Ffa0dbf6a48d2be396522587c06da%2F9-23.%20Bali%2C%20Indonesia-Getty.jpg',
+        title: 'Bali, Indonesia',
+        location: 'Indonesia',
+        rating: 3,
+        reviewed: 3
+      },
+      {
+        image: 'https://www.usnews.com/dims4/USNEWS/e7ef0a4/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff3%2Fb5%2F5bab42a64ccab6167e281d16ffbd%2F10-22.%20Costa%20Rica%20-%20Getty.jpg',
+        title: 'Costa Rica',
+        location: 'Manuel Antonio National Park',
+        rating: 3,
+        reviewed: 144
+      },
+      {
         image: 'https://www.usnews.com/dims4/USNEWS/d1fe84e/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F71%2Fd5%2F6bddc81a4df2abb0fce91784b8c6%2F7.%2025-Great%20Barrier%20Reef-Getty.jpg',
         title: 'Great Barrier Reef',
         location: 'Barrier Reef',
@@ -231,6 +287,20 @@ export const TravelList: Array<Place> = [
     like: 150,
     share: 120,
     reviews: [
+      {
+        image: 'https://www.usnews.com/dims4/USNEWS/2cda733/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff1%2F3e%2Ffa0dbf6a48d2be396522587c06da%2F9-23.%20Bali%2C%20Indonesia-Getty.jpg',
+        title: 'Bali, Indonesia',
+        location: 'Indonesia',
+        rating: 3,
+        reviewed: 3
+      },
+      {
+        image: 'https://www.usnews.com/dims4/USNEWS/e7ef0a4/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2Ff3%2Fb5%2F5bab42a64ccab6167e281d16ffbd%2F10-22.%20Costa%20Rica%20-%20Getty.jpg',
+        title: 'Costa Rica',
+        location: 'Manuel Antonio National Park',
+        rating: 3,
+        reviewed: 144
+      },
       {
         image: 'https://www.usnews.com/dims4/USNEWS/d1fe84e/2147483647/resize/1200x%3E/quality/85/?url=http%3A%2F%2Fcom-usnews-beam-media.s3.amazonaws.com%2F71%2Fd5%2F6bddc81a4df2abb0fce91784b8c6%2F7.%2025-Great%20Barrier%20Reef-Getty.jpg',
         title: 'Great Barrier Reef',

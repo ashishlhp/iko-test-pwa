@@ -7,19 +7,20 @@ import { Review } from '../../../constant';
   styleUrls: ['./place-review.component.scss']
 })
 export class PlaceReviewComponent implements OnInit {
-
   @Input() reviews: Array<Review> = [];
-  
+
   TwoslidesCabareteConfig = {
-    slidesToShow: 2,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     centerPadding: 40,
-    responsive: [{ breakpoint: 400, settings: { slidesToShow: 1, slidesToScroll: 1, fade: true } }]
+    responsive: [
+      { breakpoint: 992, settings: { slidesToShow: 2, slidesToScroll: 2 } },
+      { breakpoint: 400, settings: { slidesToShow: 1, slidesToScroll: 1, fade: true } }
+    ]
   };
-  
+
   constructor() {}
 
   ngOnInit() {}
-
 }

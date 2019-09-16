@@ -62,21 +62,11 @@
 }
 .cabarete_two_slider {
   .slick-prev {
-    left: 15px !important;
-    z-index: 9;
-    bottom: 0;
-    height: 50px !important;
-    line-height: 50px;
     &:before {
       color: #000 !important;
     }
   }
   .slick-next {
-    right: 15px !important;
-    z-index: 9 !important;
-    bottom: 0;
-    height: 50px !important;
-    line-height: 50px;
     &:before {
       color: #000 !important;
     }

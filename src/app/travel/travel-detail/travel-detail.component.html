@@ -1,56 +1,56 @@
 <!-- App Header -->
-<app-header [isBack]="true" [title]="'Spot Detail'"> </app-header>
+<app-header [isBack]="true" [title]="'Place Detail'"> </app-header>
 <!-- Container -->
 <div class="content_body main_details">
+  <div class="details_banner position-relative">
+    <img class="w-100" [src]="place?.image" />
+    <ul class="list-inline position-absolute p-3 w-100 text-right font-weight-light">
+      <li class="mb-1">
+        <i class="fa fa-share-alt mr-1" aria-hidden="true"></i><span>{{ place?.share }}</span>
+      </li>
+      <li>
+        <i class="fa fa-heart-o mr-1" aria-hidden="true"></i><span>{{ place?.like }}</span>
+      </li>
+    </ul>
+  </div>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <div class="details_banner">
-          <img [src]="place?.image" />
-          <ul>
-            <li>
-              <i class="fa fa-share-alt" aria-hidden="true"></i><span>{{ place?.share }}</span>
-            </li>
-            <li>
-              <i class="fa fa-heart-o" aria-hidden="true"></i><span>{{ place?.like }}</span>
-            </li>
-          </ul>
-        </div>
-        <div class="details_content">
-          <h1>{{ place?.title }}</h1>
+        <div class="details_content pt-3">
+          <h3 class="m-0 h3 font-weight-light">{{ place?.title }}</h3>
           <span>{{ place?.subTitle }}</span>
-          <ul class="listing">
-            <li>
-              <i class="fa fa-random" aria-hidden="true"></i><span>{{ place?.wind }} knots</span>
+          <ul class="listing d-flex justify-content-between mt-3 mb-3 p-0 list-inline">
+            <li class="pt-1 pb-1 pr-2 pl-2 mr-2 rounded d-inline-block text-center">
+              <i class="fa fa-random mr-1" aria-hidden="true"></i><span>{{ place?.wind }} knots</span>
             </li>
-            <li>
-              <i class="fa fa-home" aria-hidden="true"></i><span>{{ place?.homes }} Centers</span>
+            <li class="pt-1 pb-1 pr-2 pl-2 mr-2 rounded d-inline-block text-center">
+              <i class="fa fa-home mr-1" aria-hidden="true"></i><span>{{ place?.homes }} Centers</span>
             </li>
-            <li>
-              <i class="fa fa-users" aria-hidden="true"></i><span>{{ place?.people }} Centers</span>
+            <li class="pt-1 pb-1 pr-2 pl-2 mr-2 rounded d-inline-block text-center">
+              <i class="fa fa-users mr-1" aria-hidden="true"></i><span>{{ place?.people }} Centers</span>
             </li>
           </ul>
-          <ul>
-            <li>
-              <i class="fa fa-compress" aria-hidden="true"></i>
-              <div class="details_listing">
+          <ul class="p-0 list-inline">
+            <li class="d-flex mb-2">
+              <i class="fa fa-compress mt-1 mr-2" aria-hidden="true"></i>
+              <div class="d-flex flex-wrap details_listing">
                 <span *ngFor="let item of place?.suitable">{{ item }},&nbsp;</span>
               </div>
             </li>
-            <li>
-              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              <div class="details_listing">
+            <li class="d-flex mb-2">
+              <i class="fa fa-pencil-square-o mt-1 mr-2" aria-hidden="true"></i>
+              <div class="d-flex flex-wrap details_listing">
                 Wind:&nbsp;<span *ngFor="let item of place?.windDetail">{{ item }},&nbsp;</span>
               </div>
             </li>
-            <li>
-              <i class="fa fa-line-chart" aria-hidden="true"></i>
-              <div class="details_listing">
+            <li class="d-flex mb-2">
+              <i class="fa fa-line-chart mt-1 mr-2" aria-hidden="true"></i>
+              <div class="d-flex flex-wrap details_listing">
                 Spot:&nbsp;<span *ngFor="let item of place?.spotDetail">{{ item }},&nbsp;</span>
               </div>
             </li>
           </ul>
-          <p>{{place?.description}}</p>
+          <p>{{ place?.description }}</p>
         </div>
       </div>
     </div>
@@ -68,8 +68,8 @@
     <!-- Center Splider -->
     <div class="row">
       <div class="col-md-12">
-        <div class="cabarete_two_slider detail-card-header">
-          <h2>Centers in Cabarete</h2>
+        <div class="cabarete_two_slider detail-card-header pt-3 ">
+          <h2 class="h3 font-weight-light mb-3">Centers in Cabarete</h2>
           <app-place-review [reviews]="reviews"></app-place-review>
         </div>
       </div>
@@ -77,11 +77,11 @@
     <!-- Slider  -->
     <div class="row">
       <div class="col-md-12">
-        <div class="cabarete_one_slider detail-card-header">
-          <h2>Centers in Cabarete</h2>
+        <div class="cabarete_one_slider detail-card-header pt-3">
+          <h2 class="h3 font-weight-light mb-3">Centers in Cabarete</h2>
           <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="sliderConfig">
             <div ngxSlickItem *ngFor="let slide of reviews" class="inner_cabarete_one_slider">
-              <img src="{{ slide.image }}" alt="" width="100%" />
+              <img src="{{ slide.image }}" alt="" class="w-100 rounded" />
             </div>
           </ngx-slick-carousel>
         </div>
@@ -90,8 +90,8 @@
     <!-- Related Spots Slider -->
     <div class="row">
       <div class="col-md-12">
-        <div class="related_slider detail-card-header">
-          <h2>Releated Spots</h2>
+        <div class="related_slider detail-card-header pt-3">
+          <h2 class="h3 font-weight-light mb-3">Releated Spots</h2>
           <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="sliderConfig">
             <div ngxSlickItem *ngFor="let slide of relatedPlaces">
               <place-item [place]="slide"></place-item>
@@ -103,8 +103,10 @@
     <!-- Footer button -->
     <div class="row">
       <div class="col-md-12">
-        <div class="bottom_btn">
-          <button (click)="onBook()">Book a course in cabarete</button>
+        <div class="bottom_btn w-100 position-fixed text-center p-3">
+          <button class="rounded font-weight-light pt-1 pb-1 pl-3 pr-3 border-0 shadow-none" (click)="onBook()">
+            Book a course in cabarete
+          </button>
         </div>
       </div>
     </div>
