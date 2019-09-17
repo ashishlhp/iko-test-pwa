@@ -10,9 +10,9 @@ import { AuthenticationService, CredentialsService, I18nService } from '@app/cor
 })
 export class HeaderComponent implements OnInit {
   menuHidden = true;
-  @Input() isBack: boolean = false;
+  @Input() isBack = false;
   @Input() title: string;
-  private className:string = '';
+  private className = '';
 
   constructor(
     private router: Router,
@@ -42,9 +42,9 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   public windowScrolled($event: Event) {
     if(window.pageYOffset>100){
-      this.className = "sticky-header";
+      this.className = 'sticky-header';
     }else{
-      this.className = "";
+      this.className = '';
     }
   }
 

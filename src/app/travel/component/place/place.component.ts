@@ -8,7 +8,7 @@ import { Place } from '../../constant';
 })
 export class PlaceComponent implements OnInit {
   @Input() place: Place;
-  @Input() isFromHome: boolean = false;
+  @Input() isFromHome = false;
   constructor() {}
 
   ngOnInit() {}

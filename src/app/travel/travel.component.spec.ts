@@ -40,7 +40,7 @@ describe('TravelComponent', () => {
     component.ngOnInit();
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    let find = fixture.debugElement.queryAll(By.directive(PlaceComponent)).length;
+    const find = fixture.debugElement.queryAll(By.directive(PlaceComponent)).length;
     expect(find).toBeGreaterThan(3);
   });
 });
