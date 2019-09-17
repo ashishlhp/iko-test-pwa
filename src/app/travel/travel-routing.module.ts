@@ -16,8 +16,7 @@ const routes: Routes = [
 	{ 
 		path: ':id/detail',
 		loadChildren: './travel-detail/travel-detail.module#TravelDetailModule',
-		pathMatch:'full', 
-		data: { title: extract('Travel') }
+		pathMatch:'full'
 	}
 ];
 

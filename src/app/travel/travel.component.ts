@@ -11,6 +11,7 @@ export class TravelComponent implements OnInit {
 
 	constructor(private router:Router) {
 		this.router.events.subscribe((event)=>{
+			// Set scroll to top on route change
 			if(event instanceof NavigationEnd){
 				window.scrollTo(0, 0);
 			}

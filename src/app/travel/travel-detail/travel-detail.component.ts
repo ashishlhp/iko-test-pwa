@@ -18,14 +18,14 @@ export class TravelDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-  	// Get place id
+  	// Get place id from url
     this.placeId = +this.route.snapshot.paramMap.get('id');
 
     const index = TravelList.findIndex(x => {
       return x.id === this.placeId;
     });
     /**
-     * Get related spot detail & remove current opent spot from list.
+     * Get related place detail & remove current open place from list.
      */
     if (index > -1) {
       this.place = TravelList[index];

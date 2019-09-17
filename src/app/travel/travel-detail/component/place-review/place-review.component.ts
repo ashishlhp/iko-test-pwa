@@ -8,8 +8,10 @@ import { Review } from '../../../constant';
 })
 export class PlaceReviewComponent implements OnInit {
   @Input() reviews: Array<Review> = [];
-
-  TwoslidesCabareteConfig = {
+  /**
+   * Slider config 
+   */
+  sliderConfig = {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,

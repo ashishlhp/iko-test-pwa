@@ -6,8 +6,8 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { TravelList } from './constant'
 import { By } from '@angular/platform-browser';
-// import { HeaderComponent } from '@app/shell/header/header.component';
 import { PlaceComponent } from '@app/travel/component/place/place.component';
+
 describe('TravelComponent', () => {
   let component: TravelComponent;
   let fixture: ComponentFixture<TravelComponent>;

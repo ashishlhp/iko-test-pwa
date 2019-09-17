@@ -11,8 +11,6 @@ import { PlaceReviewComponent } from './component/place-review/place-review.comp
 import { MapComponentComponent } from './component/map-component/map-component.component';
 import { WeatherComponentComponent } from './component/weather-component/weather-component.component';
 
-// import { HeaderComponent } from '@app/shell/header/header.component';
-
 describe('TravelDetailComponent', () => {
   let component: TravelDetailComponent;
   let fixture: ComponentFixture<TravelDetailComponent>;
